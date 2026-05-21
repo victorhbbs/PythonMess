@@ -16,4 +16,9 @@ produtos = [
 total_estoque = 0
 
 for produto in produtos:
-    total_estoque
+    total_produto = produto.calc_total()
+    total_estoque += total_produto
+
+    print(f"Produto: {produto.nome}, Preço: R${produto.preco:.2f}, Quantidade: {produto.quantidade}, Total: R${total_produto:.2f}")
+    
+print(f"Total Estoque: R${total_estoque:.2f}")
