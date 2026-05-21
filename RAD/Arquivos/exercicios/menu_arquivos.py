@@ -45,5 +45,3 @@ def buscar_aluno():
 
             if nome.lower() == nome_busca.lower:
                 print(f"Nome: {nome} | Nota: {nota} | Situação: {situacao}")
-
-def atualizar_nota():
